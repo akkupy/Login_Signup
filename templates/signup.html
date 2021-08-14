@@ -1,0 +1,27 @@
+<html>
+<head>
+  <link rel="stylesheet" href="{{url_for('static',filename='signup.css')}}">
+  <title>Sign up</title>
+</head>
+
+<body>
+  <a href="/" class="home">Home</a>
+  <div class="main">
+    <p class="sign" align="center">Sign Up</p>
+    <form action="{{ url_for('signup') }}" method="POST">
+		
+			<input  id ='name' name ='name' class="un " type="text" align="center" placeholder="Enter your Name">
+			<input  id ='email' name ='email' class="un " type="text" align="center" placeholder="Enter your Email">
+      		<input id='password' name='password' class="pass" type="password" align="center" placeholder="Password">
+			<input  id ="date_of_birth" name ="date_of_birth" class="un " type="date" align="center" placeholder="Enter your Date of birth">
+			<input  id ='gender' name ='gender' class="un " type="text" align="center" placeholder="Enter your Gender[M,F,O]"></br></br>
+			<input type="submit" class="submit" value="Sign Up"></br></br>
+			<div align ="center" class="msg">{{ msg }}</div>
+			<p class="forgot" align="center"><a href="{{url_for('login')}}">Already have an account? Sign in</p></br>
+			
+		</form>
+         
+    </div>
+     
+</body>
+</html>

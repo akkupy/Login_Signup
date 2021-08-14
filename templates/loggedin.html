@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='index.css')}}">
+<body>
+
+<div class="bgimg">
+  <div class="middle">
+    <h1>Hi {{session.name}} !!</h1>
+	<h3>Welcome to your account!</h3>
+	<h5>Your Date Of Birth is {{session.date_of_birth}}</h5>
+    <hr>
+    <a href="{{ url_for('logout') }}" class="login">Logout</a>
+  </div>
+</div>
+
+</body>
+</html>

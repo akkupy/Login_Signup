@@ -1,0 +1,21 @@
+<html>
+<head>
+  <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
+  <title>Sign in</title>
+</head>
+
+<body>
+  <a href="/" class="home">Home</a>
+  <div class="main">
+    <p class="sign" align="center">Log in</p>
+    <form class="form1" action="{{url_for('login')}}" method="POST">
+      <input  id ='email' name ='email' class="un " type="text" align="center" placeholder="Email">
+      <input id='password' name='password' class="pass" type="password" align="center" placeholder="Password">
+      <input type="submit" class="submit" value="Log In">
+      <p class="forgot" align="center"><a href="{{url_for('signup')}}">New User? Sign Up</p>
+	  <div align ='center' class="msg">{{ msg }}</div>
+         
+    </div>
+     
+</body>
+</html>

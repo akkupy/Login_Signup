@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <title>
+    Akku's Webpage
+  </title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='index.css')}}">
+</header>
+
+<body>
+
+<div class="bgimg">
+  <div class="middle">
+    <h1>Welcome To Akku's Webpage.</h1>
+    <hr>
+    <a href="/login" class="login">Login</a>
+    <a href="/signup" class="signup">Signup</a>
+  </br></br>
+  <div align ='center' class="msg">{{ msg }}</div>
+  </div>
+</div>
+
+</body>
+</html>
