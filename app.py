@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import re
 from flask_mysqldb import MySQL
-import os
 from assets.credentials import *
+
 
 print(r'''
      __       _       _           
@@ -16,9 +16,6 @@ print("\n* Copyright of Akash, 2021          *")
 print("\n* https://www.github.com/akkupy     *")
 print("\n* https://t.me/akkupy               *")
 print("\n*************************************")
-
-
-
 
 app = Flask(__name__)
 
