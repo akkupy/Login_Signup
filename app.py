@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import re
 from flask_mysqldb import MySQL
 import os
+from assets.credentials import *
 
 print(r'''
      __       _       _           
@@ -23,10 +24,10 @@ app = Flask(__name__)
 
 app.secret_key = "akku"
 
-app.config['MYSQL_HOST'] = 'sql6.freemysqlhosting.net'
-app.config['MYSQL_USER'] = 'sql6429073'
-app.config['MYSQL_PASSWORD'] = '8uMGp8HslA'
-app.config['MYSQL_DB'] = 'sql6429073'
+app.config['MYSQL_HOST'] = host
+app.config['MYSQL_USER'] = user
+app.config['MYSQL_PASSWORD'] = password
+app.config['MYSQL_DB'] = database
 app.config['MYSQL_CURSORCLASS']='DictCursor'
 
 mysql = MySQL(app)

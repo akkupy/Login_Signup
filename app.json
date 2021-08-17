@@ -1,0 +1,33 @@
+{
+  "name": "Login_Signup",
+  "description": "A Login Web application",
+  "logo": "https://www.mediafire.com/convkey/f0fc/bss731ubfhpfpsqzg.jpg",
+  "keywords": [
+    "login",
+    "signup",
+    "plugin"
+  ],
+  "repository": "https://github.com/akkupy/Login_Signup",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "host": {
+      "description": "Enter Mysql HOST Here",
+      "value": ""
+    },
+    "user": {
+      "description": "Enter Mysql Username Here",
+      "value": ""
+    },
+    "password": {
+      "description": "Enter Mysql Password)",
+      "value": ""
+    },
+    "database": {
+      "description": "Enter Database Name Here",
+      "value": ""
+    }
+  }
+}
