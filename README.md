@@ -1,4 +1,4 @@
-<p align="center"><a href="https://akkupy.tech"><img src="https://www.involve.me/assets/images/blog/how-to-create-a-simple-price-calculator-and-capture-more-leads/calculator-M.png" width="500"></a></p> 
+<p align="center"><a href="https://akkupy.tech"><img src="assets/images/intro.png" width="500"></a></p> 
 <h1 align="center"><b>A Login/Signup Web App </b></h1>
 <h3 align="center">A Web application on Login!</h3>
 <h4 align="center">Based on Python Flask and MySQL</h4>
