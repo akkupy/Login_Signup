@@ -29,3 +29,8 @@ elif choice=='n':
     os.system('python app.py')
     time.sleep(3)
     sys.exit()
+else:
+    print("Invalid input!")
+    print("Aborting....")
+    time.sleep(3)
+    sys.exit()
